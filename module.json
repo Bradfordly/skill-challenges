@@ -1,0 +1,53 @@
+{
+    "name": "skill-challenges",
+    "title": "Skill Challenges for DnD5e",
+    "description": "Run 4E-style Skill Challenge encounters in Foundry VTT's dnd5e system.",
+    "system": ["dnd5e"],
+    "version": "{{version}}",
+    "author": "Bradfordly",
+    "authors": [
+      {
+        "name": "Bradfordly",
+        "url": "https://github.com/Bradfordly"
+      },
+    ],
+    "socket": true,
+    "scripts": [],
+    "esmodules": ["/src/skill-challenges.js"],
+    "styles": ["/styles/skill-challenges.css"],
+    "dependencies": [
+      {
+        "name": "socketlib", "type": "module"
+      },
+      {
+        "name": "lib-wrapper", "type": "module"
+      }
+    ],
+    "packs": [
+      {
+        "name": "skill-challenges-macros",
+        "label": "Skill Challenges Macros",
+        "path": "./packs/skillChallengesMacros.db",
+        "module": "world",
+        "type": "Macro",
+        "lang": ["en"]
+      }
+    ],
+    "languages": [
+      {
+          "lang": "en",
+          "name": "English",
+          "path": "lang/en.json"
+      }
+    ],
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9"
+    "minimumSystemVersion": "1.5.0",
+    "bugs": "https://github.com/Bradfordly/skill-challenges/-/issues",
+    "flags": {
+      "allowBugReporter": true
+    },
+    "url": "https://github.com/Bradfordly/skill-challenges",
+    "manifest": "https://github.com/Bradfordly/skill-challenges/raw/main/package/module.json",
+    "download": "https://github.com/Bradfordly/skill-challenges/raw/main/package/skill-challenges-v{{version}}.zip",
+}
